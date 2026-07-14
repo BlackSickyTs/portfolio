@@ -358,8 +358,8 @@ export default function App() {
         .cursor-ring.click{width:30px;height:30px;border-color:rgba(129,140,248,.6);background:rgba(129,140,248,.1)}
 
         /* noise */
-        .bg-lines{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.65}
-        .bg-lines canvas{width:100%!important;height:100%!important}
+        .bg-lines{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.65;background:#07070a}
+        .bg-lines canvas{width:100%!important;height:100%!important;display:block;background:#07070a}
         .bg-overlay{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at center,transparent 30%,rgba(7,7,10,.85) 100%)}
         .noise{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:256px 256px}
 
