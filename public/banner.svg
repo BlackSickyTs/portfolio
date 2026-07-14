@@ -1,0 +1,67 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </radialGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="sub" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b6b7a"/>
+      <stop offset="100%" stop-color="#888899"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- floating orbs -->
+  <circle cx="200" cy="150" r="180" fill="url(#glow1)"/>
+  <circle cx="1000" cy="480" r="200" fill="url(#glow2)"/>
+  <circle cx="600" cy="315" r="120" fill="rgba(129,140,248,.03)"/>
+
+  <!-- subtle grid lines -->
+  <g opacity=".04" stroke="#fff" stroke-width=".5">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="96" font-weight="700" fill="url(#title)" letter-spacing="2">DAIMOS</text>
+
+  <!-- subtitle -->
+  <text x="600" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="url(#sub)" font-style="italic" letter-spacing="1">Full-stack developer & AI architect</text>
+
+  <!-- decorative line -->
+  <line x1="480" y1="400" x2="720" y2="400" stroke="url(#title)" stroke-width="1" opacity=".5"/>
+
+  <!-- bottom tag -->
+  <text x="600" y="460" text-anchor="middle" font-family="monospace" font-size="11" fill="#4a4a5a" letter-spacing="4">BUILDING THE FUTURE</text>
+
+  <!-- corner accents -->
+  <rect x="40" y="40" width="60" height="2" fill="#818cf8" opacity=".3"/>
+  <rect x="40" y="40" width="2" height="60" fill="#818cf8" opacity=".3"/>
+  <rect x="1160" y="40" width="-60" height="2" fill="#a855f7" opacity=".3"/>
+  <rect x="1160" y="40" width="-2" height="60" fill="#a855f7" opacity=".3"/>
+  <rect x="40" y="590" width="60" height="-2" fill="#a855f7" opacity=".3"/>
+  <rect x="40" y="590" width="2" height="-60" fill="#a855f7" opacity=".3"/>
+  <rect x="1160" y="590" width="-60" height="-2" fill="#818cf8" opacity=".3"/>
+  <rect x="1160" y="590" width="-2" height="-60" fill="#818cf8" opacity=".3"/>
+</svg>
